@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE buildprofiles SYSTEM "https://resources.jetbrains.com/writerside/1.0/build-profiles.dtd">
+<buildprofiles xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/build-profiles.xsd"
+               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+    <variables></variables>
+    <build-profile instance="infinity">
+        <variables>
+            <custom-css>custom.css</custom-css>
+            <primary-color>#101010</primary-color>
+            <color-preset>vivid</color-preset>
+            <noindex-content>true</noindex-content>
+            <custom-favicons>logo.svg</custom-favicons>
+            <header-logo>logo.svg</header-logo>
+
+        </variables>
+
+        <footer>
+            <link href="https://github.com/infinity-MSFS">Github</link>
+            <link href="https://discord.gg/GhkQ9wrrbp">Discord</link>
+            <link href="https://infinity-msfs.github.io/">Official Website</link>
+        </footer>
+    </build-profile>
+
+</buildprofiles>
