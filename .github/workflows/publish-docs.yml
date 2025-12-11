@@ -16,16 +16,16 @@ jobs:
       - name: Build Writerside docs
         uses: JetBrains/writerside-github-action@v4
         with:
-          instance: "Writerside"       # MUST MATCH your folder name exactly
-          artifact: "webHelpWriterside2.zip"
+          instance: "Writerside/infinity"       # Format: <module>/<product> where product ID is from infinity.tree
+          artifact: "webHelpInfinity2.zip"
 
       - name: Unzip artifact
-        run: unzip -q webHelpWriterside2.zip -d webHelpWriterside2
+        run: unzip -q webHelpInfinity2.zip -d webHelpInfinity2
 
       - name: Upload artifact to GitHub Pages
         uses: actions/upload-pages-artifact@v3
         with:
-          path: "webHelpWriterside2"   # Folder inside the produced ZIP
+          path: "webHelpInfinity2"   # Folder inside the produced ZIP
 
   deploy:
     needs: build
