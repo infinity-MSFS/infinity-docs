@@ -1,0 +1,50 @@
+@font-face {
+    font-family: "UncutSans";
+    src: url("Uncut-Sans.woff2") format("woff2");
+}
+
+*{
+font-family: "UncutSans", Arial, sans-serif;
+}
+
+:root {
+  --rs-color-black:black;
+--rs-color-white: #fff;
+}
+.toc-item--theme-light{
+color:black !important;
+}
+
+.toc-item--theme-dark{
+color:white !important;
+}
+
+
+.article__img {
+    border-radius: 30px !important;
+    border: none;
+}
+
+.toc-item--highlighted{
+background:transparent !important;
+}
+
+.footer__powered{
+    display:none;
+}
+
+.app__footer {
+    background-color: #101010 !important;
+}
+
+::-moz-selection {
+  background: rgba(0,75,250,0.5) !important;
+}
+::selection {
+  background: rgba(0,75,250,0.5) !important;
+}
+
+.wh-header__product-logo {
+    filter: drop-shadow(0px 0px 5px rgba(255, 255, 255, 0.85));
+    transform: scale(1.1);
+}
