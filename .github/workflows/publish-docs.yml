@@ -20,7 +20,7 @@ jobs:
           artifact: "webHelpINFINITY2-all.zip"
 
       - name: Unzip artifact
-        run: unzip -q webHelpINFINITY2-all.zip -d webHelpINFINITY2
+        run: unzip -q artifacts/webHelpINFINITY2-all.zip -d webHelpINFINITY2
 
       - name: Upload artifact to GitHub Pages
         uses: actions/upload-pages-artifact@v3
