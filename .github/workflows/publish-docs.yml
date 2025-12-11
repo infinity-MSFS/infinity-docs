@@ -23,14 +23,16 @@ jobs:
       - name: Unzip artifact
         run: unzip -q artifacts/webHelpINFINITY2-all.zip -d webHelpINFINITY2
 
-      - name: Debug - List build output
+      - name: Copy custom CSS and font files
         run: |
-          echo "=== Build output structure ==="
-          find webHelpINFINITY2 -type f -name "*.css" -o -name "*.woff2"
-          echo "=== Checking for custom.css reference in HTML ==="
-          grep -r "custom.css" webHelpINFINITY2 || echo "No custom.css reference found"
-          echo "=== Contents of cfg folder ==="
-          ls -la Writerside/cfg/
+          cp Writerside/cfg/custom.css webHelpINFINITY2/custom.css
+          cp Writerside/cfg/Uncut-Sans.woff2 webHelpINFINITY2/Uncut-Sans.woff2
+
+      - name: Inject custom CSS into HTML files
+        run: |
+          for file in webHelpINFINITY2/*.html; do
+            sed -i 's|</head>|<link rel="stylesheet" href="custom.css"></head>|' "$file"
+          done
 
       - name: Replace redirect index.html with start page
         run: cp webHelpINFINITY2/infinitymsfs.html webHelpINFINITY2/index.html
