@@ -34,8 +34,6 @@ jobs:
             sed -i 's|</head>|<link rel="stylesheet" href="custom.css"></head>|' "$file"
           done
 
-      - name: Replace redirect index.html with start page
-        run: cp webHelpINFINITY2/infinitymsfs.html webHelpINFINITY2/index.html
 
       - name: Upload artifact to GitHub Pages
         uses: actions/upload-pages-artifact@v3
