@@ -48,3 +48,18 @@ background:transparent !important;
     filter: drop-shadow(0px 0px 5px rgba(255, 255, 255, 0.85));
     transform: scale(1.1);
 }
+
+a[href*="jetbrains.com"] {
+    pointer-events: none !important;
+    cursor: default !important;
+    color: inherit !important;
+    text-decoration: none !important;
+    opacity: 0.9;
+}
+
+/* Specifically target header/logo anchors */
+header.panel__header a[href*="jetbrains.com"],
+.wh-header__product-logo a[href*="jetbrains.com"],
+a.wh-header__product-logo[href*="jetbrains.com"] {
+    pointer-events: none !important;
+}
