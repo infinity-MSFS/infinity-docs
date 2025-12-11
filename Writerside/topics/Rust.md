@@ -7,7 +7,7 @@ This document outlines the coding standards and best practices for Rust developm
 ### Types and Traits
 - Use **PascalCase** for types, traits, and enum variants
 
-```rust
+```kotlin
 struct UserAccount {
     username: String,
     email: String,
@@ -28,7 +28,7 @@ enum Status {
 - Use **snake_case** for functions, methods, and variables
 - Use **SCREAMING_SNAKE_CASE** for constants
 
-```rust
+```kotlin
 fn calculate_total(items: &[Item]) -> f64 {
     let mut total_price = 0.0;
     // Implementation
@@ -44,7 +44,7 @@ const DEFAULT_TIMEOUT: Duration = Duration::from_secs(30);
 ### Use Result Type
 Always use `Result<T, E>` for operations that can fail. Never unwrap unless safety is absolutely guaranteed.
 
-```rust
+```kotlin
 // BAD
 struct Config {
     path: Option<String>
@@ -71,7 +71,7 @@ fn get_path_from_cfg(cfg: &Config) -> Result<String> {
 ### Custom Error Types
 Define custom error types for your domain.
 
-```rust
+```kotlin
 use thiserror::Error;
 
 #[derive(Error, Debug)]
@@ -92,7 +92,7 @@ pub enum DataError {
 ### Prefer Borrowing
 Use references to avoid unnecessary cloning.
 
-```rust
+```kotlin
 // Good - uses borrowing
 fn process_data(data: &Vec<String>) {
     for item in data {
@@ -109,7 +109,7 @@ fn process_data_bad(data: Vec<String>) {
 ### Use Appropriate Mutability
 Only use mutable references when necessary.
 
-```rust
+```kotlin
 fn read_only(data: &Data) {
     // Can only read
 }
@@ -124,7 +124,7 @@ fn modify(data: &mut Data) {
 ### Use Iterator Methods
 Leverage iterator combinators instead of loops when appropriate.
 
-```rust
+```kotlin
 // Good - functional style
 let sum: i32 = numbers
     .iter()
@@ -144,7 +144,7 @@ for num in &numbers {
 ### Pattern Matching
 Use pattern matching extensively.
 
-```rust
+```kotlin
 match result {
     Ok(value) => println!("Success: {}", value),
     Err(e) => eprintln!("Error: {}", e),
@@ -159,8 +159,8 @@ if let Some(value) = optional {
 ### Use `?` Operator
 Use the `?` operator for error propagation.
 
-```rust
-fn process_file(path: &str) -> Result<(), Box<dyn std::error::Error>> {
+```kotlin
+fn process_file(path: &str) -> Result<(), Box<dyn std::error::Error>>{
     let content = read_file_content(path)?;
     let parsed = parse_content(&content)?;
     save_result(&parsed)?;
@@ -173,7 +173,7 @@ fn process_file(path: &str) -> Result<(), Box<dyn std::error::Error>> {
 ### Use Doc Comments
 Document public APIs with `///` comments.
 
-```rust
+```kotlin
 /// Calculates the fibonacci number at position `n`.
 ///
 /// # Arguments
@@ -204,7 +204,7 @@ pub fn fibonacci(n: u64) -> u64 {
 ### Write Unit Tests
 Include unit tests in the same file using a `tests` module.
 
-```rust
+```kotlin
 #[cfg(test)]
 mod tests {
     use super::*;
@@ -235,7 +235,7 @@ mod tests {
 
 ## Code Organization
 
-```rust
+```kotlin
 // Import order
 use std::collections::HashMap;
 use std::fs::File;

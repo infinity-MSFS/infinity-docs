@@ -8,7 +8,7 @@ This document outlines the coding standards and best practices for C++ developme
 - Use **PascalCase** for class and struct names
 - Names should be descriptive and represent the purpose
 
-```cpp
+```c
 class DataProcessor {
     // Implementation
 };
@@ -23,7 +23,7 @@ struct UserProfile {
 - Use **camelCase** for function and method names
 - Function names should be verbs or verb phrases
 
-```cpp
+```c
 void processData();
 int calculateTotal(int a, int b);
 bool isValid() const;
@@ -34,7 +34,7 @@ bool isValid() const;
 - Use **snake_case** with prefix `m_` for member variables
 - Use **ALL_CAPS** for constants
 
-```cpp
+```c
 int itemCount = 0;
 std::string userName;
 
@@ -57,11 +57,12 @@ Infinity provides a header-only [C++ library](https://github.com/infinity-MSFS/i
 ### Use Smart Pointers
 Prefer smart pointers over raw pointers to manage memory automatically.
 
-```cpp
+```c
 #include <memory>
 
 // Prefer unique_ptr for exclusive ownership
-std::unique_ptr<DataProcessor> processor = std::make_unique<DataProcessor>();
+std::unique_ptr<DataProcessor> processor = 
+    std::make_unique<DataProcessor>();
 
 // Use shared_ptr when ownership needs to be shared
 std::shared_ptr<Resource> resource = std::make_shared<Resource>();
@@ -70,7 +71,7 @@ std::shared_ptr<Resource> resource = std::make_shared<Resource>();
 ### Use `auto` Keyword
 Use `auto` for type deduction when the type is obvious or overly verbose.
 
-```cpp
+```c
 auto count = 42;  // int
 auto name = std::string("John");
 auto it = container.begin();
@@ -79,7 +80,7 @@ auto it = container.begin();
 ### Range-Based For Loops
 Prefer range-based for loops for iterating over containers.
 
-```cpp
+```c
 std::vector<int> numbers = {1, 2, 3, 4, 5};
 
 // Good
@@ -98,7 +99,7 @@ for (auto& item : modifiableList) {
 ### Use Exceptions
 Use exceptions for error handling instead of error codes.
 
-```cpp
+```c
 class FileOpenException : public std::runtime_error {
 public:
     explicit FileOpenException(const std::string& filename)
@@ -118,7 +119,7 @@ void openFile(const std::string& filename) {
 ### Header Guards
 Use `#pragma once` or include guards in header files.
 
-```cpp
+```c
 // MyClass.h
 #pragma once
 
@@ -134,7 +135,7 @@ class MyClass {
 4. Other libraries' headers
 5. Your project's headers
 
-```cpp
+```c
 #include "MyClass.h"
 
 #include <cstdio>
@@ -159,7 +160,7 @@ class MyClass {
 
 Use Doxygen-style comments for public APIs:
 
-```cpp
+```c
 /**
  * @brief Processes the input data and returns the result
  * 
