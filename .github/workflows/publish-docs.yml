@@ -3,7 +3,7 @@ name: Publish Writerside Docs to GitHub Pages
 on:
   push:
     branches:
-      - main   # update if your default branch is different
+      - master   # update if your default branch is different
 
 jobs:
   build:
