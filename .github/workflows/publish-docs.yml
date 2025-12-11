@@ -16,11 +16,24 @@ jobs:
       - name: Build Writerside docs
         uses: JetBrains/writerside-github-action@v4
         with:
-          instance: "Writerside/infinity"       # Format: <module>/<product> where product ID is from infinity.tree
+          instance: "Writerside/infinity"
           artifact: "webHelpINFINITY2-all.zip"
+          location: "Writerside"
 
       - name: Unzip artifact
         run: unzip -q artifacts/webHelpINFINITY2-all.zip -d webHelpINFINITY2
+
+      - name: Debug - List build output
+        run: |
+          echo "=== Build output structure ==="
+          find webHelpINFINITY2 -type f -name "*.css" -o -name "*.woff2"
+          echo "=== Checking for custom.css reference in HTML ==="
+          grep -r "custom.css" webHelpINFINITY2 || echo "No custom.css reference found"
+          echo "=== Contents of cfg folder ==="
+          ls -la Writerside/cfg/
+
+      - name: Replace redirect index.html with start page
+        run: cp webHelpINFINITY2/infinitymsfs.html webHelpINFINITY2/index.html
 
       - name: Upload artifact to GitHub Pages
         uses: actions/upload-pages-artifact@v3
