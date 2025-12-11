@@ -7,22 +7,13 @@
                   start-page="InfinityMSFS.md">
 
     <toc-element topic="InfinityMSFS.md">
-        <toc-element topic="Infinity-Launcher.md">
-            <toc-element topic="Usage.md"/>
-            <toc-element topic="Code-Structure-Launcher.md"/>
-            <toc-element topic="Encryption-Standards.md"/>
+        <toc-element topic="TacLink.md"/>
+    </toc-element>
+    <toc-element topic="Code-Standards.md">
+        <toc-element topic="Typescript.md"/>
+        <toc-element topic="Rust.md"/>
+        <toc-element topic="C.md">
+            <toc-element topic="C-SDK.md"/>
         </toc-element>
-        <toc-element topic="Infinity-Package-Builder.md">
-            <toc-element topic="UsagePackageBuilder.md">
-                <toc-element topic="Package-Builder.md"/>
-                <toc-element topic="Package-Differ.md"/>
-                <toc-element topic="Release-Publisher.md"/>
-                <toc-element topic="Launcher-JSON-Manager.md"/>
-                <toc-element topic="Lua-API.md"/>
-            </toc-element>
-            <toc-element topic="Code-Structure.md"/>
-            <toc-element topic="Encryption-Standards-Package-Builder.md"/>
-        </toc-element>
-        <toc-element topic="InfinityAPI.md"/>
     </toc-element>
 </instance-profile>

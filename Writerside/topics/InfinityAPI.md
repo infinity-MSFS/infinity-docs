@@ -1,3 +1,0 @@
-# InfinityAPI
-
-Start typing here...

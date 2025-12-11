@@ -1,3 +1,0 @@
-# Package Differ
-
-Start typing here...

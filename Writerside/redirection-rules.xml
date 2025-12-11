@@ -6,4 +6,68 @@
         <accepts>page.html</accepts>
     </rule>
     -->
+    <rule id="77267e22">
+        <description>Created after removal of "C++ 14" from Infinity Docs</description>
+        <accepts>C-14.html</accepts>
+    </rule>
+    <rule id="519a6014">
+        <description>Created after removal of "C++ 23" from Infinity Docs</description>
+        <accepts>C-23.html</accepts>
+    </rule>
+    <rule id="cfa895">
+        <description>Created after removal of "InfinityAPI" from Infinity Docs</description>
+        <accepts>InfinityAPI.html</accepts>
+    </rule>
+    <rule id="2d85086b">
+        <description>Created after removal of "Encryption Standards" from Infinity Docs</description>
+        <accepts>Encryption-Standards-Package-Builder.html</accepts>
+    </rule>
+    <rule id="6f4b452b">
+        <description>Created after removal of "Code Structure" from Infinity Docs</description>
+        <accepts>Code-Structure.html</accepts>
+    </rule>
+    <rule id="3e8a35fe">
+        <description>Created after removal of "Lua API" from Infinity Docs</description>
+        <accepts>Lua-API.html</accepts>
+    </rule>
+    <rule id="1ce8b305">
+        <description>Created after removal of "Launcher JSON Manager" from Infinity Docs</description>
+        <accepts>Launcher-JSON-Manager.html</accepts>
+    </rule>
+    <rule id="77d0a3f2">
+        <description>Created after removal of "Release Publisher" from Infinity Docs</description>
+        <accepts>Release-Publisher.html</accepts>
+    </rule>
+    <rule id="28e4f3d2">
+        <description>Created after removal of "Package Differ" from Infinity Docs</description>
+        <accepts>Package-Differ.html</accepts>
+    </rule>
+    <rule id="464d301a">
+        <description>Created after removal of "Package Builder" from Infinity Docs</description>
+        <accepts>Package-Builder.html</accepts>
+    </rule>
+    <rule id="43408981">
+        <description>Created after removal of "Usage" from Infinity Docs</description>
+        <accepts>UsagePackageBuilder.html</accepts>
+    </rule>
+    <rule id="67314344">
+        <description>Created after removal of "Infinity Package Builder" from Infinity Docs</description>
+        <accepts>Infinity-Package-Builder.html</accepts>
+    </rule>
+    <rule id="719b810e">
+        <description>Created after removal of "Encryption Standards" from Infinity Docs</description>
+        <accepts>Encryption-Standards.html</accepts>
+    </rule>
+    <rule id="62051804">
+        <description>Created after removal of "Code Structure" from Infinity Docs</description>
+        <accepts>Code-Structure-Launcher.html</accepts>
+    </rule>
+    <rule id="20326b25">
+        <description>Created after removal of "Usage" from Infinity Docs</description>
+        <accepts>Usage.html</accepts>
+    </rule>
+    <rule id="a6fc4b1">
+        <description>Created after removal of "Infinity Launcher" from Infinity Docs</description>
+        <accepts>Infinity-Launcher.html</accepts>
+    </rule>
 </rules>

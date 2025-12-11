@@ -1,25 +1,20 @@
-# Infinity MSFS
+# Infinity
 
-Welcome to Infinity! We offer a powerful downloader and aircraft installer for MSFS freeware, designed to streamline and enhance your flight simulation experience.
+Welcome to Infinity — a development studio and technology platform dedicated to delivering high-fidelity aircraft systems and next-generation tooling for Microsoft Flight Simulator (2020/2024).
+We not only build the Infinity Manager ecosystem (TacLink, DRM, updater, and more) but also develop premium WASM modules and avionics systems for commercial MSFS aircraft, pushing well beyond the default limitations of the simulator.
 
-## Our Ecosystem
+## Infinity Manager
 
-### For Users
-- **Infinity Launcher**: The **Infinity Launcher** is a cross-platform (Windows and Linux-x64) freeware downloader and installer, fully compatible with both `MSFS` and `FS2024`. Lightweight, secure, and visually appealing, the launcher delivers a seamless experience tailored to the needs of flight simulation enthusiasts.
+A unified ecosystem for MSFS add-ons. The Manager handles purchasing, installation, updates, configuration, and developer integration — all through a streamlined user interface.
 
-### For Developers
-- **Infinity Package Builder**: The **Infinity Package Builder** is a versatile cross-platform (Windows and Linux-x64) utility designed to empower developers with a suite of advanced tools, including:
-    1. Managing and updating product pages directly on the **Infinity Launcher**.
-    2. Building SDK packages independent of the simulator.
-    3. Generating ultra-efficient diffs for fragmented downloads.
-    4. Publishing releases to GitHub or popular CDNs (e.g., Cloudflare) through customizable Lua scripting.
+## TacLink
 
-- **Infinity API**: The **Infinity API** ensures uninterrupted data delivery across our services, enabling seamless updates for aircraft, changelogs, and new groups/projects. It also supports secure closed beta access and includes functionality for submitting bug reports, with the option to collect hardware information for enhanced troubleshooting.
+[TacLink](TacLink.md) is a cutting-edge multiplayer and networking framework engineered for high-performance military simulation. TacLink enables features like air-to-air TACAN, synchronized radar, AAR support, combat systems,  and more.
 
-## Contact
+## Infinity DRM
 
-Have questions or need assistance? Join our [Discord](https://discord.gg/GhkQ9wrrbp) and open a ticket. We're here to support you every step of the way.
+A secure, MSFS-optimized digital rights management and licensing system enabling studios to safely distribute payware aircraft without compromising the user experience.
 
-## Contributing
+## WASM Systems Development
 
-Thank you for your interest in contributing to Infinity! Although this project is open-source, we still ask potential contributors to contact a maintainer directly. Join our [Discord](https://discord.gg/GhkQ9wrrbp) and open a ticket detailing your proposed contribution. We’re excited to hear your ideas and collaborate with you!
+Infinity designs and implements top-tier WASM modules for payware aircraft — including advanced avionics, flight systems, navigation suites, custom displays, and more — built with performance, accuracy, and maintainability at the core.
